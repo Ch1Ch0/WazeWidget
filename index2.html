@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Waze Widget for Mobile and Desktop</title>
+        <meta name="description" content="Waze Widget for Mobile and Desktop" />
+        <meta name="author" content="CafeStudio" />
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+       	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript>
+		<style>
+		#InputLocationWazeCodeCanyon:hover {
+		        border-color: #a0d5ee !important;
+		}
+
+		</style>
+    </head>
+    <body>
+        <div class="container">
+		
+			<!-- Codrops top bar -->
+           <div class="codrops-top">
+                <span style="margin-left: 5px;">Waze Widget for Mobile and Desktop</span>
+                <span class="right">
+                    <strong>CafeStudio</strong>
+                </span>
+            </div><!--/ Codrops top bar -->
+			
+			<header>
+			
+				<h1><strong>Waze Widget</strong></h1>
+				<h2>Stylish Waze Widget for Mobile and Desktop using various modals</h2>
+				
+				<nav class="codrops-demos">
+					<a href="index.html">Demo 1</a>
+					<a class="current-demo" href="index2.html">Demo 2</a>
+					<a href="index3.html">Demo 3</a>
+					<a href="manual.html">Manual</a>
+				</nav>
+				
+			</header>
+			
+			<section class="main" style="z-index:9;">
+				<div class="wrapper-demo">
+					<h2 style="font-size: 30px; line-height: 38px; margin: 0; position: relative; font-weight: 300; color: #666; text-shadow: 1px 1px 1px rgba(255,255,255,0.7); display: block; text-align: center; ">Free input Location</h2> ​
+				</div>
+			</section>
+
+
+			<section class="main" style="height: 600px;">
+			
+				<div class="wrapper-demo">
+
+
+
+					<!-- Code Integration for Waze Widget Step 1, use below for modal: FreeInput and SimpleLocation -->
+					<div id="WazeWidget"></div>
+				    <!-- Code Integration for Waze Widget Step 1, use this one for modal: Dropdown -->
+	    			<!--<div id="WazeWidget">
+	    				<div id="dd" class="wrapper-dropdown-3" tabindex="1">
+							<span>Home</span>
+							<ul class="dropdownWW">
+								<li><a href="#" onclick="setLocation('30.394602','-97.724419')"><i class="fa fa-home"></i>Home</a></li>
+								<li><a href="#" onclick="setLocation('30.284546','-97.737808')"><i class="fa fa-university"></i>University</a></li>
+								<li><a href="#" onclick="setLocation('30.267423','-97.712746')"><i class="fa fa-users"></i>Friends</a></li>
+							</ul>
+						</div>
+					</div>-->
+					<!-- Code Integration for Waze Widget Step 1 END -->
+
+
+				</div>
+
+			</section>
+
+			
+		</div>
+		
+		<!-- jQuery if needed -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<!-- js for Waze Widget Step 2 -->
+		<script type="text/javascript" src="js/WazeWidgetLibrary/WazeWidget.js"></script>
+		<!-- js for Waze Widget Step 2 END-->
+
+		
+
+
+		<script>
+
+			
+			   var _0x5621=["\x41\x49\x7A\x61\x53\x79\x43\x4F\x70\x52\x53\x45\x2D\x6F\x79\x35\x4C\x79\x4B\x6C\x30\x6A\x71\x61\x44\x4C\x35\x72\x70\x69\x39\x6E\x6E\x70\x45\x71\x5F\x42\x77"];
+			   var GAPKy=_0x5621[0];
+			 /* initialize widget Step 3 */
+			//$("#WazeWidget").WazeWidget( { Modal:"Dropdown" }); 
+			$("#WazeWidget").WazeWidget( { Modal:"FreeInput", InputPlaceHolder:"Austin, Texas, United States", Lat:"30.267153", Long:"-97.7430608", GoogleAPIKey: GAPKy, View:"Compact" }); 
+			//$("#WazeWidget").WazeWidget( { Modal:"SimpleLocation" , Lat:"", Long:"" }); 
+			/* initialize widget Step 3 END */
+
+			
+      </script>
+
+
+    </body>
+</html>
